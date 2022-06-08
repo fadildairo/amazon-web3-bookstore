@@ -3,7 +3,7 @@ import { useMoralis } from "react-moralis";
 import { Link } from 'react-router-dom';
 import './Header.css'
 import Amazon from "../images/logo.png";
-import USA from "../images/usa.png";
+import NIGERIA from "../images/nigeria.png";
 import BookStore from "../images/bookstore.png";
 import {ShoppingCartOutlined, MenuOutlined} from "@ant-design/icons";
 
@@ -41,7 +41,7 @@ const Header = () => {
                 </span>
               </Badge>
               <Space className="header-buttons" size={"small"}>
-                <img src={USA} alt="region" className="flag"></img>▾
+                <img src={NIGERIA} alt="region" className="flag"></img>▾
               </Space>
               
             </Space>

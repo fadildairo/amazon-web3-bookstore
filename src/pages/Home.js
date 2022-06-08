@@ -14,8 +14,8 @@ import Dictionaries from "../images/dictionaries.png";
 import Fantasy from "../images/fantasy.png";
 import Horror from "../images/horror.png";
 
-const carousel = [Carousel1,Carousel2,Carousel3];
-const catCard = [Adventure, Fantasy,Horror,Dictionaries];
+const carousel = [Carousel1, Carousel2, Carousel3];
+const catCard = [Adventure, Fantasy, Horror, Dictionaries];
 const Home = () => {
 
 return(
