@@ -1,5 +1,5 @@
-import {Select, Button, Modal, Input} from 'antd'
 import {ShoppingCartOutlined} from "@ant-design/icons";
+import { Select, Button, Modal, Input } from 'antd';
 import { useState } from 'react';
 import { useMoralis } from 'react-moralis';
 
@@ -21,11 +21,11 @@ function Purchase({book}) {
     const priceMatic = book.price / price.usdPrice;
     
     // Send Matic to book store owner address
-
+ 
     const options1 = {
       type: "native", 
       amount: Moralis.Units.ETH(priceMatic), 
-      receiver: "xxxxx"
+      receiver: "0x04332aC5f45Bb9349f3fed88575EDfa3E69d6E5E"
     }
     let result = await Moralis.transfer(options1)
 
@@ -56,13 +56,9 @@ function Purchase({book}) {
         <Option value={5}>5</Option>
       </Select>
       {chainId === "0x13881" &&
-      <Button
-      className="login"
-      style={{ width: "100%", marginTop: "50px" }}
-      onClick={()=>setIsModalVisible(true)}
-    >
-      <ShoppingCartOutlined /> Buy Now
-    </Button>
+      <Button className="login" style={{ width: "100%", marginTop: "50px" }} onClick={()=>setIsModalVisible(true)}>
+        <ShoppingCartOutlined /> Buy Now
+      </Button>
       }
       
       <Modal
